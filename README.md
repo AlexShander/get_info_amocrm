@@ -10,7 +10,7 @@ to your real credentials.
 
 # How to use
 For example you can handle through crontab
-
+```
   #Grafana gets JSON via API 
   10 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_leads.sh $(expr $(date +%s) - 3600 )
   30 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_leads.sh $(expr $(date +%s) - 3600 )
@@ -23,3 +23,4 @@ For example you can handle through crontab
   20 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_tasks.sh $(expr $(date +%s) - 3600 )
   40 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_tasks.sh $(expr $(date +%s) - 3600 )
   0 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_tasks.sh $(expr $(date +%s) - 3600 )
+```
