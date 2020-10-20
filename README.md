@@ -8,7 +8,7 @@ hash=eeedddd....
 
 to your real credentials.
 
-#How to use
+# How to use
 For example you can handle through crontab
 
 \#Grafana gets JSON via API
