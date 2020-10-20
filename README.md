@@ -12,15 +12,15 @@ to your real credentials.
 For example you can handle through crontab
 ```
   #Grafana gets JSON via API 
-  10 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_leads.sh $(expr $(date +%s) - 3600 )
-  30 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_leads.sh $(expr $(date +%s) - 3600 )
-  50 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_leads.sh $(expr $(date +%s) - 3600 ) 
+  10 * * * * cd /usr/local/amocrm/get_info_amocrm/ && /usr/local/amocrm/get_info_amocrm/getlist_leads.sh $(expr $(date +%s) - 3600 )
+  30 * * * * cd /usr/local/amocrm/get_info_amocrm/ && /usr/local/amocrm/get_info_amocrm/getlist_leads.sh $(expr $(date +%s) - 3600 )
+  50 * * * * cd /usr/local/amocrm/get_info_amocrm/ && /usr/local/amocrm/get_info_amocrm/getlist_leads.sh $(expr $(date +%s) - 3600 ) 
   
-  15 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_notes.sh $(expr $(date +%s) - 3600 )
-  35 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_notes.sh $(expr $(date +%s) - 3600 )
-  55 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_notes.sh $(expr $(date +%s) - 3600 )
+  15 * * * * cd /usr/local/amocrm/get_info_amocrm/ && /usr/local/amocrm/get_info_amocrm/getlist_notes.sh $(expr $(date +%s) - 3600 )
+  35 * * * * cd /usr/local/amocrm/get_info_amocrm/ && /usr/local/amocrm/get_info_amocrm/getlist_notes.sh $(expr $(date +%s) - 3600 )
+  55 * * * * cd /usr/local/amocrm/get_info_amocrm/ && /usr/local/amocrm/get_info_amocrm/getlist_notes.sh $(expr $(date +%s) - 3600 )
   
-  20 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_tasks.sh $(expr $(date +%s) - 3600 )
-  40 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_tasks.sh $(expr $(date +%s) - 3600 )
-  0 * * * * cd /usr/local/amocrm/grafana_sql/ && /usr/local/amocrm/grafana_sql/getlist_tasks.sh $(expr $(date +%s) - 3600 )
+  20 * * * * cd /usr/local/amocrm/get_info_amocrm/ && /usr/local/amocrm/get_info_amocrm/getlist_tasks.sh $(expr $(date +%s) - 3600 )
+  40 * * * * cd /usr/local/amocrm/get_info_amocrm/ && /usr/local/amocrm/get_info_amocrm/getlist_tasks.sh $(expr $(date +%s) - 3600 )
+  0 * * * * cd /usr/local/amocrm/get_info_amocrm/ && /usr/local/amocrm/get_info_amocrm/getlist_tasks.sh $(expr $(date +%s) - 3600 )
 ```
